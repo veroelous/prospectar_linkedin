@@ -1,0 +1,23 @@
+# Limites, horários e restrições de texto. Sem dados de contatos.
+[limits]
+daily_max_attempts = 15        # tentativas globais por dia (started/confirmed/uncertain contam)
+history_checks_per_run = 60
+pause_min_seconds = 45
+pause_max_seconds = 140
+preflight_valid_hours = 24
+
+[schedule]
+timezone = "America/Sao_Paulo"
+weekdays = [0, 1, 2, 3, 4]     # segunda a sexta
+start_hour = 8
+end_hour = 18
+
+[queue]
+connected_since = "2026-01-01"
+per_day = 15
+
+[text]
+max_questions = 1
+max_chars = 600
+blocked_terms = ["genoma", "reunião", "reuniao", "agendar", "call", "proposta", "desconto", "oferta"]
+forbidden_claims = ["nunca conversamos", "acompanho seu trabalho", "li seu artigo"]
